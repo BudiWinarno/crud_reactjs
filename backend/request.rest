@@ -1,0 +1,29 @@
+GET http://localhost:5000/daftarproduks
+
+###
+GET http://localhost:5000/daftarproduks/1
+
+###
+DELETE http://localhost:5000/daftarproduks/3
+
+###
+POST http://localhost:5000/daftarproduks
+Content-Type: application/json
+
+{
+    "nama" : "produk 3",
+    "harga" : 2500,
+    "stok" : "3"
+}
+
+###
+PATCH http://localhost:5000/daftarproduks/1
+Content-Type: application/json
+
+{
+    "nama" : "produk 1",
+    "harga" : 2500,
+    "stok" : "3"
+}
+
+
